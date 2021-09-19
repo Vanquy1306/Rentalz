@@ -49,11 +49,7 @@ router.post('/', async (req,res)=>{
 
     let order = new Order({
         orderItems: orderItemsIdsResolved,
-        shippingAddress1: req.body.shippingAddress1,
-        shippingAddress2: req.body.shippingAddress2,
-        city: req.body.city,
-        zip: req.body.zip,
-        country: req.body.country,
+        cardnumber: req.body.cardnumber,
         phone: req.body.phone,
         status: req.body.status,
         totalPrice: totalPrice,
